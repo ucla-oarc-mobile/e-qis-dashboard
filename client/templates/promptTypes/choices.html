@@ -1,0 +1,39 @@
+<% _.each(properties, function(display, index) { %>
+  <div class="choice">
+    <div class="input-container">
+      <input type="<%= inputType %>" id="<%= id %>_<%= index %>" name="<%= id %>" value="<%= index %>" data-label="<%= display %>">
+      <label for="<%= id %>_<%= index %>"></label>
+    </div>
+    <div class="label-container">
+      <label for="<%= id %>_<%= index %>"><%= display %></label>
+    </div>
+  </div>
+<% }) %>
+
+<% if (custom) { %>
+  <div class="choice deletable dummy">
+    <div class="input-container">
+      <input type="<%= inputType %>" id="<%= id %>_dummy" name="<%= id %>">
+      <label for="<%= id %>_dummy"></label>
+    </div>
+    <div class="label-container">
+      <label for="<%= id %>_dummy"></label>
+      <img src="images/collect/delete.png" class="custom-delete">
+    </div>
+  </div>
+
+  <div class="choice custom">
+    <div class="input-container">
+      <img src="images/collect/plus.png">
+    </div>
+    <div class="label-container">
+      Other (please specify)
+    </div>
+  </div>
+
+  <div class="choice custom-controls">
+    <input type="text" class="custom-input form-control">
+    <button type="button" class="btn btn-primary custom-close">Close</button>
+    <button type="button" class="btn btn-primary custom-create">Create Choice</button>
+  </div>
+<% } %>

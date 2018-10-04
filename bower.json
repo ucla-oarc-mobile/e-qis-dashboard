@@ -1,0 +1,40 @@
+{
+  "name": "e-qis-web",
+  "version": "0.6.5",
+  "private": true,
+  "dependencies": {
+    "backbone.marionette": "~2.4.5",
+    "jquery": "~1.12.4",
+    "underscore": "~1.8.3",
+    "backbone": "~1.3.2",
+    "bootstrap": "~3.3.6",
+    "jszip": "~3.1.1",
+    "file-saver": "~1.3.2",
+    "jquery.panzoom": "~3.2.2"
+  },
+  "devDependencies": {
+  },
+  "exportsOverride": {
+    "jquery": {
+      "js": "dist/jquery.js"
+    },
+    "underscore": {
+      "js": "underscore.js"
+    },
+    "backbone": {
+      "js": "backbone.js"
+    },
+    "backbone.marionette": {
+      "js": "lib/backbone.marionette.js"
+    },
+    "bootstrap": {
+      "less": "less/*.less",
+      "less/mixins": "less/mixins/*.less",
+      "fonts": "dist/fonts/*",
+      "js": "dist/js/*"
+    }
+  },
+  "resolutions": {
+    "backbone": "~1.3.2"
+  }
+}

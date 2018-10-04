@@ -1,0 +1,7 @@
+<% if (value) { %>
+  <div class="existing-thumbnail">
+    <img src="/app/media/read?client=<%= app.config.client %>&id=<%= value %>&size=small">
+  </div>
+<% } %>
+
+<input type="file" id="<%= id %>" name="<%= id %>" class="add-file">

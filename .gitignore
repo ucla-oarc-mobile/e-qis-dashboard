@@ -1,0 +1,24 @@
+.DS_Store
+**/.DS_Store
+
+node_modules
+
+## Local files
+_local-notes
+
+## Bower files
+bower_components
+requires
+
+## Project build files
+build
+
+## Project source files
+dist
+
+## IDE files
+*.sublime-project
+*.sublime-workspace
+
+## Debug files
+npm-debug.log

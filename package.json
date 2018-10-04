@@ -1,0 +1,50 @@
+{
+  "name": "e-qis-web",
+  "version": "0.6.5",
+  "description": "e-qis-web is a backbone.js app that allows for user management and data exploration as part of the e-QIS project.",
+  "main": "index.js",
+  "devDependencies": {
+    "babel-cli": "^6.9.0",
+    "babel-preset-es2015": "^6.9.0",
+    "babelify": "^7.3.0",
+    "browserify": "^13.0.1",
+    "browserify-shim": "^3.8.12",
+    "grunt": "^1.0.1",
+    "grunt-babel": "^6.0.0",
+    "grunt-bower-task": "^0.4.0",
+    "grunt-browserify": "^5.0.0",
+    "grunt-cli": "^1.2.0",
+    "grunt-concurrent": "^2.3.0",
+    "grunt-contrib-clean": "^1.0.0",
+    "grunt-contrib-compress": "^1.3.0",
+    "grunt-contrib-concat": "^1.0.1",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-cssmin": "^1.0.1",
+    "grunt-contrib-jshint": "^1.0.0",
+    "grunt-contrib-less": "^1.3.0",
+    "grunt-contrib-pug": "^1.0.0",
+    "grunt-contrib-uglify": "^1.0.1",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-exec": "^0.4.7",
+    "grunt-http-server": "^2.0.0",
+    "grunt-mkdir": "^1.0.0",
+    "grunt-shell-spawn": "^0.3.10",
+    "grunt-template-module": "^0.5.1",
+    "load-grunt-tasks": "^3.5.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ucla/e-qis-web.git"
+  },
+  "scripts": {
+    "init-lib": "./node_modules/grunt-cli/bin/grunt init:lib",
+    "build-dev": "./node_modules/grunt-cli/bin/grunt build:dev",
+    "watch-dev": "./node_modules/grunt-cli/bin/grunt concurrent:dev",
+    "bwdev": "./node_modules/grunt-cli/bin/grunt buildwatch:dev",
+    "build-prod": "./node_modules/grunt-cli/bin/grunt build:prod"
+  },
+  "bugs": {
+    "url": "https://github.com/ucla/e-qis-web/issues"
+  },
+  "homepage": "https://eqis.gseis.ucla.edu/"
+}

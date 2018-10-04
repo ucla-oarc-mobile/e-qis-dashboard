@@ -1,0 +1,41 @@
+doctype html
+html
+  head
+    // favicons
+    link(rel='shortcut icon', type='image/x-icon', href='/favicon.ico')
+    link(rel='apple-touch-icon-precomposed', href='/mobile-icon.png')
+    // Main CSS
+    link(rel='stylesheet', href=pkg.name+'.css')
+    // Fonts
+    link(rel='stylesheet', href='https://fonts.googleapis.com/css?family=Didact+Gothic')
+    link(rel='stylesheet', href='https://fonts.googleapis.com/css?family=Roboto:400,400italic,700,700italic')
+    // Final App JS bundle, includes Bootstrap
+    if debug
+      script(src='vendor.js')
+      script(src='templates.js')
+      script(src='app.js')
+    else
+      script(src=pkg.name+'.js')
+
+    // Recommended by Bootstrap for responsiveness
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+  body
+    header#header
+      nav.navbar.navbar-default.navbar-fixed-top
+        .container-fluid
+          // Brand and toggle get grouped for better mobile display
+          .navbar-header
+            button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#navbar-content', aria-expanded='false')
+              span.sr-only Toggle navigation
+              span.icon-bar
+              span.icon-bar
+              span.icon-bar
+            a.navbar-brand(href='#')
+              img.logo(src='images/folder.png')
+              |             e-QIS Portfolio
+          // Collect the nav links, forms, and other content for toggling
+          #navbar-content.collapse.navbar-collapse
+            ul#navbar-links.nav.navbar-nav
+            ul#navbar-profile.nav.navbar-nav.navbar-right
+    section#content.container-fluid
+    div#modalContainer

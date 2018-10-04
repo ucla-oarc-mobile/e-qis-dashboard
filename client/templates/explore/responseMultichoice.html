@@ -1,0 +1,9 @@
+<td class="day"><%= day_folder %></td>
+<td class="question"><%= question %></td>
+<td class="response">
+  <ul>
+  <% _.each(responses, function(response){ %>
+    <li><%= response %></li>
+  <% }); %>
+  </ul>
+</td>

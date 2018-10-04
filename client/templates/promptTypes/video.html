@@ -1,0 +1,9 @@
+<% if (value) { %>
+  <div class="existing-thumbnail">
+    <video controls>
+      <source src="/app/media/read?client=<%= app.config.client %>&id=<%= value %>" type="video/mp4">
+    </video>
+  </div>
+<% } %>
+
+<input type="file" id="<%= id %>" name="<%= id %>" class="add-file">

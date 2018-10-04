@@ -1,0 +1,90 @@
+<div class="user-details">
+  <div class="row spaced">
+    <h1 class="app-blue-font">User Details</h1>
+  </div>
+  <div class="row spaced">
+    <table class="user-details-tables app-blue-font col-sm-5">
+      <tbody>
+        <tr>
+          <td class="titles">User Name</td>
+          <td>
+            <input id="usernameBox"  class="col-sm-12" type="text" placeholder="No Username"  value="<%= username %>" readonly>
+          </td>
+        </tr>
+        <tr>
+          <td class="titles">Password</td>
+          <td>
+            <input id="passwordBox" class="col-sm-6" placeholder="********"  type="text">
+            <span >
+              <button class="change-password btn-styled" type="button" id="changePassword">
+                <span>
+                  <img src="images/edit.png">
+                </span>
+                Change Password
+              </button>
+            </span>
+          </td>
+        </tr>
+        <tr>
+          <td class="titles">First Name</td>
+          <td>
+            <input id="firstNameBox" class="col-sm-12" type="text" placeholder="No First Name"  value="<%= first_name %>">
+          </td>
+        </tr>
+        <tr>
+          <td class="titles">Last Name</td>
+          <td>
+            <input id="lastNameBox"  class="col-sm-12" type="text" placeholder="No Last Name"  value="<%= last_name %>">
+          </td>
+        </tr>
+        <tr>
+          <td class="titles">Email Address</td>
+          <td>
+            <input id="emailBox" type="text" class="col-sm-12"  placeholder="No Email" value="<%= email_address %>">
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="row spaced" id="roles">
+    <table class="app-blue-font user-details-tables col-sm-5">
+      <tbody>
+      <tr>
+        <th class="titles">
+          User Roles
+        </th>
+      </tr>
+      <tr>
+        <td class="styled-radio">
+          <input id="teacher" type="radio" name="role" value="teacher">
+          <label for="teacher">Teacher</label>
+        </td>
+      </tr>
+      <tr>
+        <td class="styled-radio">
+          <input id="admin" type="radio" name="role" value="admin">
+          <label for="admin">Admin</label>
+        </td>
+      </tr>
+      <tr>
+        <td class="styled-radio">
+          <input id="evaluator" type="radio" name="role" value="evaluator">
+          <label for="evaluator">Evaluator</label>
+        </td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="row spaced">
+    <button type="submit" class="btn-styled" id="saveUser">
+      <span>
+        <img src="images/save.png">
+      </span>
+      Save Changes
+    </button>
+    <span class="cannot-update-user hidden">
+      Only admins can change a user's name or email address.
+      Please contact an admin if you need to change any of these.
+    </span>
+  </div>
+</div>

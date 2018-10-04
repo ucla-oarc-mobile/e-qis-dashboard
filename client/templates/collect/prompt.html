@@ -1,0 +1,15 @@
+<div class="prompt-inner">
+  <div class="skipped">SKIPPED</div>
+  <hr>
+  <div class="invalid-message"></div>
+  <label class="prompt-text" for="<%= id %>"><%= promptText %></label>
+  <div class="prompt-input"></div>
+</div>
+<% if (skippable) { %>
+  <div class="checkbox skip">
+    <label for="skip_<%= id %>">
+      <input type="checkbox" id="skip_<%= id %>">
+      <%= skipLabel %>
+    </label>
+  </div>
+<% } %>

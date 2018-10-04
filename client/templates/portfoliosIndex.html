@@ -1,0 +1,41 @@
+<div class="row">
+  <div class="col-sm-8">
+    <h1><%= title %></h1>
+  </div>
+  <div class="col-sm-4 text-right">
+    <div class="stats text-left">
+      <h3>Portfolio Summary</h3>Total Artifacts: <span id="artifact-count">
+      </span>
+    </div>
+  </div>
+</div>
+<div class="row filters">
+  <div class="col-sm-2 form-group">
+    <label for="select-portfolio">Portfolio:</label>
+    <select id="select-portfolio" class="form-control">
+      <option value="" disabled selected>Select a portfolio</option>
+    </select>
+  </div>
+  <div class="col-sm-2 form-group">
+    <label for="filter-portfolio" class="invisible">Folder</label>
+    <select id="filter-folder" class="form-control">
+      <option value="" selected>All Folders</option>
+    </select>
+  </div>
+  <div class="col-sm-3 form-group">
+    <label for="filter-type" class="invisible">Artifact Type</label>
+    <select id="filter-type" class="form-control">
+      <option value="" selected>All Artifacts</option>
+      <option value="2AssessmentArtifacts">Assessment Artifacts</option>
+      <option value="3InstructionArtifacts">Instruction Artifacts</option>
+    </select>
+  </div>
+</div>
+<div class="row">
+  <div id="artifactList" class="col-sm-4 artifact-list-container">
+    <div class="artifact-list list-group">
+    </div>
+  </div>
+  <div id="artifactDetails" class="col-sm-8 artifact-details-container">
+  </div>
+</div>
